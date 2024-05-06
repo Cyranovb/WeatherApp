@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+}
+.logo {
+    width: 20%;
+    margin-right: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.selector{
+    position: relative;
+    display: inline-block;
+    top: 40%;
+    left: 44%;
+    padding: 0;
+    color: black;
+}
+
+.header {
+    background-color: #63707a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+}
+
+.tab {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.tab a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tab.active a {
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #838383;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.weather-data {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    flex: 0 1 calc(25% - 20px);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40%;
+    width: 40%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cities {
+    flex: 0 1 calc(30% - 20px);
+    margin: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-card {
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+    margin-top: 0;
+}
+
+.weather-card p {
+    margin: 5px 0;
+}
+
+.city {
+    font-weight: bold;
+}
+
+.temperature {
+    font-size: 20px;
+}
+
+.windspeed {    
+    font-size: 20px;
+}
+
+.weather-description {
+    font-size: 20px;
+}
+
+#show-weather-btn {
+    background-color: #63707a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#city-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #63707a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer-text {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
